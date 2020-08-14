@@ -6,3 +6,4 @@ import numpy as np
 def generateImage(words, custom_mask, background="white"):
 c_mask = np.array(Image.open(custom_mask))
 wc = WordCloud(background_color=background, mask=c_mask)
+wc.generate(words)
