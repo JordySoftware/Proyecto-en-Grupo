@@ -11,6 +11,12 @@ while flag:
         flag = False
         print("Saliendo.................")
         break
+  
   tags = getTags(userid)
   
-
+if tags == None:
+   print("Error al ingresar el id")
+elif tags == "-1":
+   print("No tiene tags el usuario")
+else:
+   generateImage(tags, "image/cloud.png")
