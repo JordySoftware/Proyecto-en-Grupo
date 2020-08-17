@@ -14,5 +14,5 @@ def getTags(user_id):
   else:
     for i in jsonFormat["items"]:
             tags += i["tag_name"] + " "
-        
+        tags =tags.replace("-","")
         return tags
