@@ -11,5 +11,6 @@ while flag:
         flag = False
         print("Saliendo.................")
         break
-    
+  tags = getTags(userid)
+  
 
