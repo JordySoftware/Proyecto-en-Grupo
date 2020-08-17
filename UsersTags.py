@@ -6,3 +6,9 @@ def getTags(user_id):
 
     htmlFormat = requests.get(url)
     jsonFormat = htmlFormat.json()
+ 
+  tags = ""
+    
+  if "error_id" in jsonFormat: 
+      return None
+  else:
