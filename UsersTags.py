@@ -12,3 +12,7 @@ def getTags(user_id):
   if "error_id" in jsonFormat: 
       return None
   else:
+    for i in jsonFormat["items"]:
+            tags += i["tag_name"] + " "
+        
+        return tags
